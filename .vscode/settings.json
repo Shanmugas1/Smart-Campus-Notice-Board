@@ -1,0 +1,9 @@
+{
+  "java.project.sourcePaths": [
+    "SmartCampusNoticeBoard/src"
+  ],
+  "java.project.outputPath": "SmartCampusNoticeBoard/out",
+  "java.project.referencedLibraries": [
+    "SmartCampusNoticeBoard/lib/**/*.jar"
+  ]
+}

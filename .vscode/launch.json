@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run SmartCampusNoticeBoard",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "SmartCampusNoticeBoard",
+      "cwd": "${workspaceFolder}/SmartCampusNoticeBoard",
+      "classPaths": [
+        "${workspaceFolder}/SmartCampusNoticeBoard/out",
+        "${workspaceFolder}/SmartCampusNoticeBoard/lib/sqlite-jdbc-3.46.0.0.jar",
+        "${workspaceFolder}/SmartCampusNoticeBoard/lib/slf4j-api-2.0.16.jar"
+      ]
+    }
+  ]
+}

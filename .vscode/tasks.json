@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile SmartCampusNoticeBoard",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Set-Location '${workspaceFolder}'; New-Item -ItemType Directory -Force -Path out | Out-Null; javac -cp 'lib\\sqlite-jdbc-3.46.0.0.jar;lib\\slf4j-api-2.0.16.jar' -d out (Get-ChildItem -Path src -Recurse -Filter *.java | ForEach-Object { $_.FullName })"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run SmartCampusNoticeBoard",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Set-Location '${workspaceFolder}'; java -cp 'out;lib\\sqlite-jdbc-3.46.0.0.jar;lib\\slf4j-api-2.0.16.jar' Main"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
